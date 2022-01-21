@@ -1,0 +1,23 @@
+{
+  "name": "coding-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server ./public --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaroaaksh/coding-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaroaaksh/coding-exercise/issues"
+  },
+  "homepage": "https://github.com/aaroaaksh/coding-exercise#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
