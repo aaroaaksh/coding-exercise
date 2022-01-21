@@ -58,8 +58,10 @@ function createGroup(name) {
     this.computeBalance = function() {
         const expensePerHead = this.total / (this.users.length || 1);
         this.users.forEach(user => {
-            user.amount -= expensePerHead;
-            console.log(`${user.name}: ${user.amount}`)
+            let res = user.amount;
+            res -= expensePerHead;
+            console.log(`${user.name} | ${res}`);
+            return res;
         });
     }
 
@@ -72,7 +74,6 @@ var g1 = new createGroup('group_a');
 GROUPS.push(g1);
 g1.addUser(1, 'John Doe');
 g1.addUser(2, 'Jane Doe');
-g1.addUser(3, 'James Doe');
 // const temp_users = ['John Doe', 'Jane Doe', 'James'];
 
 // // for(let i=0; i<3; i++) {
